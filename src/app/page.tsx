@@ -43,7 +43,7 @@ export default function Dashboard() {
         ? data.data
         : [];
 
-      setCallData(calls);
+      setCallData(calls.reverse());
       setLastUpdated(new Date());
     } catch (err: unknown) {
       console.error("Error fetching data:", err);
