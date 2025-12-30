@@ -8,7 +8,7 @@ This is an AI Call Center Dashboard that displays analytics for outbound/inbound
 
 ## Tech Stack
 
-- **Framework**: Next.js 15.4.10 with App Router
+- **Framework**: Next.js 15.5.9 with App Router
 - **Runtime**: React 19.1.0 (Client Components only)
 - **Language**: TypeScript (strict mode)
 - **Styling**: Tailwind CSS v4 with shadcn/ui components (New York style)
@@ -91,3 +91,17 @@ All components are client components (`"use client"` directive).
 
 - `next.config.ts` ignores ESLint and TypeScript errors during builds
 - This is intentional for rapid development - fix lint errors before production deployment
+
+## Deployment
+
+### Vercel Deployment
+The project is ready for Vercel deployment:
+- No `vercel.json` needed - uses Next.js default configuration
+- Build command: `npm run build`
+- Output directory: `.next` (auto-detected by Vercel)
+- No environment variables required (API URL is hardcoded in `src/app/page.tsx`)
+- To change the API endpoint, edit `API_URL` in `src/app/page.tsx` or move it to an environment variable
+
+### Security Notes
+- Always run `npm audit` before deployment to check for vulnerabilities
+- Current Next.js version (15.5.9) has no known vulnerabilities
