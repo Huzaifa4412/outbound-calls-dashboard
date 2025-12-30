@@ -10,7 +10,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { CallData } from "@/types/call-data";
 
 const API_URL: string =
-  "https://script.google.com/macros/s/AKfycbxnf1A066bUpBI11FeB6iBnXH_rUDwJ9feJ5DXorxRaz71wnbpLGZaBhkQBdfVET90/exec";
+  "https://script.googleusercontent.com/macros/echo?user_content_key=AehSKLjb4mCBNxs6UhuHaYIl4eK3Dy3YyfTsgz8nGWCClATNBN0xx8l-1du6uap5FGTheYUOeLVarK4vQ0z6i8fP8p5kCyUpLVNZ75hWsJqtH4fsLJaobOp0RUmfpnG4jguM9yb1bVstGfSg1gonZP_hg1fvVAtTEHBHn58-yaaS4191j0_2vgnpBqh6XX5mATg6txFugIF2V1hDJMRWHvDjsXPPFvzIzAZ-u3aORV7Q3KLl9q9CZU74pUbxy6bXAd486YwFFX0_47UQJzEwOgGNd2CvEiTnEQ&lib=MvBeqelYj74JwcUTN_2isIb5Sp24iYjk_";
 
 export default function Dashboard() {
   const [callData, setCallData] = useState<CallData[]>([]);
